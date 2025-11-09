@@ -1200,7 +1200,7 @@ label {
 /* line 261, ../../Arafath/CL/Cl November/221. Music/HTML/scss/_header.scss */
 .header-area .main-header-area.sticky {
   box-shadow: 0px 3px 16px 0px rgba(0, 0, 0, 0.1);
-  position: fixed;
+  /*position: fixed;*/
   width: 100%;
   top: -70px;
   left: 0;
@@ -1402,6 +1402,7 @@ label {
 
 /* line 12, ../../Arafath/CL/Cl November/221. Music/HTML/scss/_about.scss */
 .about_area .about_thumb {
+  border-radius: 50px;
   margin-bottom: 30px;
 }
 
@@ -1443,7 +1444,7 @@ label {
 /* line 40, ../../Arafath/CL/Cl November/221. Music/HTML/scss/_about.scss */
 .contact_rsvp {
   padding: 184px 0;
-  background-image: url(../img/banner/contact.png);
+  background-image: url("../107762_0_meta_ver1592757961.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -2017,7 +2018,7 @@ label {
   padding-bottom: 50px;
   border-bottom: 1px solid #EFEFEF;
   padding-top: 145px;
-  background: #fff;
+  background: #050505;
 }
 
 @media (max-width: 767px) {
@@ -3239,6 +3240,7 @@ label {
 
 /* line 71, ../../Arafath/CL/Cl November/221. Music/HTML/scss/_bradcam.scss */
 .popup_box .boxed-btn3 {
+  margin-right: -200px;
   width: 100%;
   text-transform: capitalize;
 }
@@ -7445,3 +7447,463 @@ ease;
 
 
 /*# sourceMappingURL=style.css.map */
+
+
+
+element.style {
+    opacity: 1;
+}
+
+#primary .widget {
+    margin-top: 10px;
+}
+
+#primary .widget {
+    margin-top: 30px;
+}
+
+.section, .widget {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    word-wrap: break-word !important;
+    font-display: swap;
+}
+
+folha de estilos de agente de usuário
+div {
+    display: block;
+    unicode-bidi: isolate;
+}
+
+[data-mode="dark"] {
+    color: #666666;
+    background-color: #000000;
+}
+
+body {
+    color: #000000;
+    background: #050505;
+}
+
+.feed.widget .feed-widget-header {
+    margin: 0 0 10px;
+   /*v background: #ff0000; */
+    border-top: 1px solid #999!important;
+    border-radius: 2px 2px 0 0;
+    -o-border-radius: 2px 2px 0 0;
+    -ms-border-radius: 2px 2px 0 0;
+    -webkit-border-radius: 2px 2px 0 0;
+}
+
+
+
+
+
+/*Albums Download*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;700&display=swap');
+
+body {
+  background-color: #000;
+  color: #c0c0c0;
+  font-family: 'Oswald', Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+/* Container principal */
+.album-post {
+  max-width: 900px;
+  margin: 80px auto;
+  padding: 40px;
+  background: #0a0a0a;
+  border-radius: 10px;
+  box-shadow: 0 0 25px rgba(255, 128, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.album-post:hover {
+  transform: scale(1.02);
+}
+
+/* Cabeçalho */
+.album-header h2 {
+  color: #ff8000;
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.album-header .meta {
+  font-size: 14px;
+  color: #999;
+  margin-bottom: 25px;
+}
+
+.album-header a {
+  color: #ff6600;
+}
+
+/* Capa */
+.album-cover img {
+  width: 500px;
+  height: 500px;
+  border: 2px solid #222;
+  border-radius: 5px;
+  transition: 0.3s;
+  box-shadow: 0 0 25px rgba(255, 60, 0, 0.25);
+}
+
+.album-cover img:hover {
+  border-color: #ff0000;
+  box-shadow: 0 0 40px rgba(255, 0, 0, 0.5);
+}
+
+/* Infos */
+.album-info {
+  margin-top: 20px;
+  text-align: left;
+  display: inline-block;
+  background: #111;
+  padding: 15px 25px;
+  border-left: 3px solid #ff8000;
+  border-radius: 5px;
+}
+
+.album-info p {
+  margin: 5px 0;
+  font-size: 15px;
+}
+
+.label {
+  color: #ff3300;
+  font-weight: bold;
+}
+
+/* Tracklist */
+.tracklist h3 {
+  color: #ff3300;
+  margin-top: 30px;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.tracklist ol {
+  list-style: decimal;
+  text-align: left;
+  display: inline-block;
+  color: #ccc;
+  font-size: 15px;
+}
+
+/* Botões */
+.links {
+  margin-top: 25px;
+}
+
+.links a {
+  display: inline-block;
+  padding: 10px 25px;
+  border-radius: 5px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.links .spotify {
+  background: #1db954;
+  color: #000;
+  margin-right: 10px;
+}
+
+.links .download {
+  background: #ff8000;
+  color: #000;
+}
+
+.links a:hover {
+  opacity: 0.85;
+}
+
+
+
+
+
+
+/* Lista de Gêneros */
+
+.genres-list li { color: #fff; }
+
+.genres-list {
+  text-align: left;
+  margin-left: 20%;
+  width: fit-content;
+  margin-top: 20px; /* aumenta o espaço abaixo do título */
+}
+
+
+.genres-list,
+.genres-list * {
+  font-weight: bold !important;
+  color: #ff6600 !important;
+}
+
+
+.genres-list a:hover {
+  color: #ff9900 !important; /* opcional: cor no hover */
+}
+
+
+
+/* Lista de anos */
+
+.years-section {
+  margin-top: 60px; /* ou o valor que quiser pra descer */
+}
+
+
+.art-Block-body {
+  background: #0d0d0d;
+  color: #bfbfbf;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  padding: px;
+  border: 1px solid #333;
+  width: fit-content;
+}
+
+.art-BlockHeader {
+  background-color: #222;
+  padding: 5px 10px;
+  color: #ffc300;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-bottom: px solid #444;
+  margin-bottom: px;
+}
+
+.cool-tag-cloud {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.cool-tag-cloud a {
+  display: inline-block;
+  background: #ffcc00;
+  color: #000;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 4px 8px;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+}
+
+.cool-tag-cloud a:hover {
+  background: #ffa500;
+  color: #111;
+  transform: scale(1.05);
+}
+
+
+.left-section {
+  position: absolute;
+  left: -800px;
+  top: -20px; /* ajuste conforme a posição da caveira */
+  width: 250px;
+}
+
+.left-section h2 {
+  color: #ff8000;
+  font-family: 'Oswald', Arial, sans-serif;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.left-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.left-section li {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.left-section img {
+  border-radius: 4px;
+}
+
+.left-section a {
+  color: #c0c0c0;
+  text-decoration: none;
+}
+
+.left-section a:hover {
+  color: #ff6600;
+}
+
+
+
+
+
+/* SEGUNDA SECTION */
+
+/* Container da seção */
+.hub{
+  display:grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap:48px;
+  align-items:start;
+  max-width:1100px; margin:80px auto;
+}
+
+/* Imagem da esquerda */
+.hub-hero{
+  width:100%; max-width:420px; border-radius:28px; display:block;
+}
+
+/* Abas – barra */
+.hub-tabs{
+  display:flex; flex-direction:column; gap:18px; margin-bottom:22px;
+}
+
+/* Botões das abas (pílulas) */
+.hub-tab{
+  appearance:none; border:0; cursor:pointer; text-align:left;
+  padding:22px 26px; border-radius:18px;
+  background:#332019; color:#ff6600; font-weight:700; letter-spacing:.2px;
+  transition:transform .15s ease, box-shadow .15s ease, background .15s;
+}
+.hub-tab:hover{ transform:translateY(-1px); box-shadow:0 6px 16px rgba(0,0,0,.25); }
+.hub-tab.is-active{ background:#3b261f; color:#ff7a00; }
+
+/* Painéis */
+.hub-panels{ background:#241712; border-radius:20px; padding:22px; }
+.hub-panel{ display:none; }
+.hub-panel.is-active{ display:block; }
+
+/* Conteúdo interno */
+.hub-list{ margin:0; padding-left:18px; }
+.hub-list li{ margin:6px 0; }
+
+/* Mantém seu laranja forte nos links dos gêneros */
+.genres-list a{ color:#ff6600 !important; font-weight:700; }
+.genres-list a:hover{ color:#ff9900 !important; }
+
+/* Responsivo */
+@media (max-width: 980px){
+  .hub{ grid-template-columns: 1fr; }
+  .hub-left{ order:2; }
+  .hub-right{ order:1; }
+  .hub-tabs{ flex-direction:row; overflow:auto; padding-bottom:6px; }
+  .hub-tab{ white-space:nowrap; }
+}
+
+
+
+
+
+
+
+/* ======== ABAS COM IMAGENS ======== */
+.tabs-container{
+  display:flex; flex-direction:column; gap:26px;
+}
+
+.tab-card{
+  position:relative; height:110px; border-radius:26px; overflow:hidden;
+  cursor:pointer; display:block;
+  transform:translateZ(0); /* suaviza */
+  transition:transform .25s ease, box-shadow .25s ease;
+}
+.tab-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: var(--bg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: brightness(0.8);
+  transition: filter 0.3s ease;
+}
+.tab-card:hover{ transform:scale(1.03); box-shadow:0 10px 24px rgba(0,0,0,.35); }
+.tab-card:hover::before{ filter:brightness(1); }
+
+/* texto que aparece no hover */
+.tab-card .label{
+  position:absolute; inset:auto 0 16px 24px;
+  padding:10px 14px;
+  background:rgba(0,0,0,.45);
+  color:#fff; font-weight:900; letter-spacing:2px;
+  text-transform:none; border-radius:12px;
+  opacity:0; transform:translateY(8px);
+  transition:opacity .25s ease, transform .25s ease;
+  text-shadow:0 2px 6px rgba(0,0,0,.6);
+}
+.tab-card:hover .label{ opacity:1; transform:translateY(0); }
+
+/* responsivo */
+@media (max-width: 992px){
+  .tabs-container{ margin-top:24px; }
+  .tab-card{ height:90px; }
+}
+
+
+
+
+
+
+.contact-form {
+  margin: 0 auto;
+  display: none;
+  background-color: #111;
+  padding: 20px;
+  border-radius: 10px;
+  color: white;
+  width: 400px;
+  margin-top: 20px auto;
+}
+
+.contact-form.visible {
+  display: block;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="file"] {
+  background-color: #222;
+  border: 1px solid #444;
+  color: white;
+  padding: 8px;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.contact-form button {
+  background-color: #e50914;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  width: 100%;
+}
