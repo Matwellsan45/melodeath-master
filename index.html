@@ -206,6 +206,7 @@
 
 <!-- SEGUNDA SECTION -->
 
+
 <section id="hub" class="hub">
   <div class="hub-left">
     <img src="img/about/about_1.png" alt="Mascote" class="hub-hero">
@@ -835,55 +836,56 @@
 
 
 
-<div id="contact-form" class="contact-form" style="margin-top: 80px;" >
-  <form>
+<div id="contact-form" class="contact-form" style="margin-top: 80px;">
+  <form id="bandForm">
     <div class="form-group">
       <label>Band:</label>
-      <input type="text" name="band">
+      <input type="text" id="band" name="band" required>
     </div>
+
     <div class="form-group">
       <label>Album:</label>
-      <input type="text" name="album">
+      <input type="text" id="album" name="album">
     </div>
+
     <div class="form-group">
       <label>Year:</label>
-      <input type="text" name="year">
+      <input type="text" id="year" name="year">
     </div>
+
     <div class="form-group">
       <label>Genre:</label>
-      <input type="text" name="genre">
+      <input type="text" id="genre" name="genre" required>
     </div>
+
     <div class="form-group">
       <label>Country:</label>
-      <input type="text" name="country">
+      <input type="text" id="country" name="country">
     </div>
 
     <div class="form-group">
       <label>Format | Quality:</label>
-      <input type="file" value="mp3 | 320 kbps" accept=".zip,.rar,.mp3">
+      <input type="file" id="format" name="format" accept=".zip,.rar,.mp3">
     </div>
 
     <div class="form-group">
       <label>Label:</label>
-      <input type="text" name="label">
+      <input type="text" id="label" name="label">
     </div>
 
-    <!-- Upload da Capa -->
     <div class="form-group">
       <label>Capa do Álbum:</label>
-      <input type="file" name="cover" accept="image/*">
+      <input type="file" id="cover" name="cover" accept="image/*">
     </div>
 
-    <!-- Upload do Álbum -->
     <div class="form-group">
       <label>Arquivo do Álbum:</label>
-      <input type="file" name="albumFile" accept=".zip,.rar,.mp3">
+      <input type="file" id="albumFile" name="albumFile" accept=".zip,.rar,.mp3">
     </div>
 
     <button type="submit" class="boxed-btn">Enviar</button>
   </form>
 </div>
-
 
 
                     </div>
@@ -1039,6 +1041,22 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     }
   });
 </script>
+
+
+
+<script>
+  async function testarBackend() {
+    const resposta = await fetch("http://localhost:3000/api/health");
+    const dados = await resposta.json();
+    alert(`API: ${dados.api} | DB: ${dados.db}`);
+  }
+
+  testarBackend(); 
+</script>
+
+
+
+
 
 
 <script src="contact-form.js"></script>
