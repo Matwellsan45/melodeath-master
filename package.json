@@ -17,6 +17,8 @@
     "express-openid-connect": "^2.19.2",
     "express-session": "^1.18.2",
     "keycloak-connect": "^26.1.1",
+    "passport": "^0.7.0",
+    "passport-google-oauth20": "^2.0.0",
     "sqlite3": "^5.1.7",
     "typeorm": "^0.3.27",
     "winston": "^3.18.3"
