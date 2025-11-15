@@ -20,6 +20,8 @@
     "keycloak-connect": "^26.1.1",
     "passport": "^0.7.0",
     "passport-google-oauth20": "^2.0.0",
+    "pg": "^8.16.3",
+    "pg-hstore": "^2.3.4",
     "typeorm": "^0.3.27",
     "winston": "^3.18.3"
   },
