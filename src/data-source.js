@@ -1,14 +1,19 @@
-const { DataSource } = require("typeorm")
+const { DataSource } = require("typeorm");
 
 const AppDataSource = new DataSource({
-  type: "sqlite",
-  database: "database.sqlite",
-  synchronize: true,
-  entities: ["src/entity/*.js"],
-})
+    type: "postgres",
+    host: process.env.PGHOST,
+    port: Number(process.env.PGPORT),
+    username: process.env.PGUSER,
+    password: process.env.PGPASSWORD,
+    database: process.env.PGDATABASE,
+    synchronize: true,
+    ssl: false,
+    entities: ["src/entity/*.js"],
+});
 
 AppDataSource.initialize()
-  .then(() => console.log("Banco de dados conectado!"))
-  .catch((err) => console.error("Erro ao conectar no banco:", err))
+    .then(() => console.log("Banco conectado!"))
+    .catch(err => console.error("Erro ao conectar no banco:", err));
 
-module.exports = AppDataSource
+module.exports = AppDataSource;

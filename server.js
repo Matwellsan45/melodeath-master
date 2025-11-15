@@ -68,7 +68,7 @@ app.get('/teste', (req, res) => {
 // ===== CRUD BANDAS =====
 app.post('/bandas', async (req, res) => {
   try {
-    const bandRepo = AppDataSource.getRepository('Band');
+const bandRepo = AppDataSource.getRepository(Band);
     const band = bandRepo.create(req.body);
     await bandRepo.save(band);
     res.status(201).json(band);
@@ -79,7 +79,7 @@ app.post('/bandas', async (req, res) => {
 
 app.get('/bandas', async (req, res) => {
   try {
-    const bandRepo = AppDataSource.getRepository('Band');
+const bandRepo = AppDataSource.getRepository(Band);
     const { aprovada } = req.query;
 
     let bands;
@@ -97,7 +97,7 @@ app.get('/bandas', async (req, res) => {
 
 app.put('/bandas/:id/aprovar', async (req, res) => {
   try {
-    const bandRepo = AppDataSource.getRepository('Band');
+const bandRepo = AppDataSource.getRepository(Band);
     const band = await bandRepo.findOneBy({ id: parseInt(req.params.id) });
 
     if (!band) return res.status(404).json({ erro: 'Banda não encontrada' });
@@ -131,6 +131,9 @@ app.get('/', (req, res) => {
 
 // ===== INICIALIZAÇÃO =====
 const port = process.env.PORT || 3000;
-app.listen(port, () => {
-  logger.info(`Servidor rodando na porta ${port}`);
-});
+AppDataSource.initialize()
+  .then(() => {
+    console.log("DB OK");
+    app.listen(port, () => logger.info(`Servidor rodando na porta ${port}`));
+  })
+  .catch(err => console.error("Erro ao iniciar DB:", err));
