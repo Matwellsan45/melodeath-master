@@ -27,3 +27,5 @@ jobs:
 
       - name: Testar execução do servidor
         run: node server.js || echo "Servidor iniciado com sucesso"
+
+# Forcando re-execucao
